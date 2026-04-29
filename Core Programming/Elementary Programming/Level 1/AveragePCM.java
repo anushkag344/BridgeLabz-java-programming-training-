@@ -1,4 +1,4 @@
-public class Program2{
+public class  AveragePCM{
     public static void main(String[] args){
         int Maths=94;
         int Physics=95;
