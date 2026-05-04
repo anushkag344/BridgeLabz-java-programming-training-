@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SmallestCheck {
+ class LargestCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,11 +13,9 @@ public class SmallestCheck {
         System.out.print("Enter number3: ");
         int n3 = sc.nextInt();
 
-        if (n1 < n2 && n1 < n3) {
-            System.out.println("Is the first number the smallest? Yes");
-        } else {
-            System.out.println("Is the first number the smallest? No");
-                sc.close();
-        }
+        System.out.println("Is the first number the largest? " + (n1 > n2 && n1 > n3));
+        System.out.println("Is the second number the largest? " + (n2 > n1 && n2 > n3));
+        System.out.println("Is the third number the largest? " + (n3 > n1 && n3 > n2));
+        sc.close();
     }
 }
